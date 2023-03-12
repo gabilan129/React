@@ -11,7 +11,7 @@ return (
 <header>
     
     <nav class=" d-flex justify-content-between colorNav"> 
-        <h1>PowaTienda</h1>
+        <h1>PowaTiend</h1>
 
 
         <div className='divNavegacion'>
