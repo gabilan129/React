@@ -35,4 +35,8 @@ todas las funciones cominesan Con use como por ejemplo useState los hoock solo s
 useState devuelve un arrar de 2 elementos el primer elemtos es el valor actual del estado el segundo elemntos es una funcion que permite cambiar el valor del estado
 const [count,setCount] = useState() 
       
+los estados se actualizan de forma asincrona
+
+
+<!--! prev => prev + 1 trabaja con el valor previo -->
 

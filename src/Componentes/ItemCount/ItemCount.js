@@ -1,5 +1,6 @@
 import "./ItemCount.css";
 import { useState } from "react";
+import Button from '../Button/Button'
 
 const ItemCount = () => {
   const [count, setCount] = useState(0);
@@ -14,15 +15,28 @@ const ItemCount = () => {
     }
   };
 
+const multiplicar = ()=> {
+    for(let i = 0 ; i < 5 ; i++){
+        setCount(count => count + 1)
+    }
+}
+
+
+const resetearContador = () => {
+    setCount( 0 )
+}
+
   console.log(count);
 
   return (
     <div className="divCount">
       <div>
         <h1 className="h1Count">{count > 9 ? "9+" : count}</h1>
-        <button onClick={incrementar}>Suma</button>
-        <button onClick={decrementar}>restar</button>
-      </div>
+        <Button label="sumar" callback={incrementar} />
+        <Button label="restar" callback={decrementar} />
+        <Button label="multiplicar" callback={multiplicar}/>
+        <Button label="resetear Contador " callback={resetearContador}/>     
+         </div>
     </div>
   );
 };
