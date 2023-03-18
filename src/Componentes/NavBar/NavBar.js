@@ -1,6 +1,6 @@
 import CardWidget from '../CardWidget/CardWidget'
 import './NavBar.css'
-
+import Button from '../Button/Button'
 
 const NavBar = ()=> {
 
@@ -11,14 +11,16 @@ return (
 <header>
     
     <nav class=" d-flex justify-content-between colorNav"> 
-        <h1>PowaTiend</h1>
+        <h1>Powa Tienda</h1>
 
 
         <div className='divNavegacion'>
-        <button className='btn btn-primary btn__css'>inicio</button>
-        <button className='btn btn-primary btn__css'>comprar</button>
-        <button className='btn btn-primary btn__css'>informacion</button>
-        
+         
+        <Button label="tablet" callback = {()=>console.log("tablet")} />
+        <Button label="celulares" callback={()=>console.log("celulares")}/>
+        <Button label="relojes" callback={()=>console.log("relojes")}/>
+
+
         </div>
         
         <CardWidget/>

@@ -4,21 +4,22 @@ import { useState } from "react"
 const ItemCount = () => {
     const [count,setCount] = useState(0)
 
-    const sumarUno  = () =>{
-        if(count < 9) setCount(count + 1)} 
+    const incrementar  = () =>{
+        if(count < 19) setCount(count + 1)} 
 
-        const restarUno = () => {
+        const decrementar = () => {
             if(count > 0){  setCount(count - 1)
             }
         }
 
+console.log(count)
+        
 return (
 <div className="divCount">
-    
-    <h1 className="h1Count">{count}</h1>
+<h1 className="h1Count">{count > 9 ? '9+' : count}</h1>
 <div className="itemCount">
-    <button onClick={sumarUno}>Suma</button>
-     <button onClick={restarUno}>restar</button>
+    <button onClick={incrementar}>Suma</button>
+     <button onClick={decrementar}>restar</button>
 </div>
 </div>
 
