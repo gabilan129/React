@@ -40,3 +40,6 @@ los estados se actualizan de forma asincrona
 
 <!--! prev => prev + 1 trabaja con el valor previo -->
 
+componentes contonedores estan orientados al funcionamiento de de la aplicacion , contienen componentes de presentacion y otros contenedores , tienen datos para representar los cambios de estado tienen estados para representar los cambios de los datos
+
+componentes de presentacion se encargan de mostrar y dar estilos
