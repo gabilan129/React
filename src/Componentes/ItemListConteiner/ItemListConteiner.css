@@ -1,0 +1,17 @@
+.itemCount { 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.divCount { display: flex;
+justify-content: center;}
+
+button {
+    margin: 15px;
+background-color: rgb(231, 27, 27);
+}
+
+.h1Count {font-size: 100px;}
