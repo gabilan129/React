@@ -1,2 +1,5 @@
-.buttonNav {background-color: rgb(207, 30, 17);
-font-size: 20px;}
+.buttonNav {background-color: rgb(17, 115, 207);
+border-radius: 15px ;
+font-size: 20px;
+padding: 5px;
+}

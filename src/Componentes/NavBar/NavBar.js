@@ -1,9 +1,9 @@
 import CardWidget from '../CardWidget/CardWidget'
 import './NavBar.css'
 import Button from '../Button/Button'
+import LogoPowaTienda from './assets/LogoPowaTienda.png'
 
 const NavBar = ()=> {
-
 
 
 
@@ -11,8 +11,7 @@ return (
 <header>
     
     <nav class=" d-flex justify-content-between colorNav"> 
-        <h1>Powa Tienda</h1>
-
+        <img src={LogoPowaTienda} alt="logo tienda"/>
 
         <div className='divNavegacion'>
          
