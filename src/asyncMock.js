@@ -71,3 +71,14 @@ const productos = [
         image: "https://via.placeholder.com/150",
         stock: 25
       }]
+
+export const getProducts =() =>{
+return new Promise((resolve)=>{
+    setTimeout(()=>{
+        resolve(productos)
+    },1000)
+})
+
+
+}
+    
