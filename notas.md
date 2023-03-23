@@ -132,7 +132,14 @@ promesa return new promise se le pasan 2 parametros por convencion
 resolve remplaza el return de la promesa por lo que entendi y seria si la promesa se cumple
 y reject tambien remplaza el return pero en caso de que la promesa no se cumpla
 
+const productosComponentes = productos.map(=>{
+  retunr (
+    div
+     h1
+     p
 
+  )
+}) con productos.map convierto el array de productos en componentes
 
 
 <!--TODO clase 7 intercambio de datos --> 
