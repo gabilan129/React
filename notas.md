@@ -125,6 +125,14 @@ export default Mercadolibre; -->
 
 &&
 
+<!-- todo clase 6 -->
+
+promesa return new promise se le pasan 2 parametros por convencion
+(resolve y reject) 
+resolve remplaza el return de la promesa por lo que entendi y seria si la promesa se cumple
+y reject tambien remplaza el return pero en caso de que la promesa no se cumpla
+
+
 
 
 <!--TODO clase 7 intercambio de datos --> 
