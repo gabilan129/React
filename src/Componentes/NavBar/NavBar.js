@@ -17,11 +17,8 @@ return (
          
         <Button label="tablet" callback = {()=>console.log("tablet")} />
         <Button label="celulares" callback={()=>console.log("celulares")}/>
-        <Button label="relojes" callback={()=>console.log("relojes")}/>
-
-
-        </div>
-        
+        <Button label="notbooks" callback={()=>console.log("relojes")}/>
+        </div>        
         <CardWidget/>
         
     </nav>

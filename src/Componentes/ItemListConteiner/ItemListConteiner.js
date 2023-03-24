@@ -2,7 +2,7 @@ import ItemCount from "../ItemCount/ItemCount";
 import "./ItemListConteiner.css";
 import { getProducts } from "../../asyncMock";
 import { useEffect,useState} from "react";
-
+import Button from "../Button/Button";
 
 const ItemListConteiner = ({ greeting }) => {
 
@@ -18,10 +18,12 @@ useEffect(()=>{
 
 const productosComponentes = productos.map(prod =>{
   return (
-     <div key={prod.id}>
+     <div key={prod.id} className="CartComp">
          <h1>{prod.name}</h1>
-         <p>{prod.price}</p>
+         <img className="imgCarts" src={prod.image} alt={prod.name}/>
+         <p>$ {prod.price}</p>
          <p>{prod.description}</p>
+<Button label="Agregar"/>
      </div>
 
 
@@ -32,9 +34,9 @@ const productosComponentes = productos.map(prod =>{
 console.log(productos)
 
   return (
-    <div>
+    <div >
       <h1 className="d-flex justify-content-center h1Saludo">{greeting}</h1>
-      <div>
+      <div className="CartCompDiv">
         {productosComponentes}
       </div>
       <ItemCount />

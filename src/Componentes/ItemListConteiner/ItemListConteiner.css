@@ -6,4 +6,29 @@ background-color: rgb(231, 27, 27);
 
 .h1Saludo {font-size: 60px;}
 
-/* s */
+
+.imgCarts {
+        height: 200px;
+        width: 50%;
+        object-fit: cover;
+        object-fit: contain;
+}
+.CartCompDiv{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align:justify
+}
+
+.CartComp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 50vh;
+    margin: 50px;
+    margin-top: 155px;
+    border: 5px solid black;
+}
