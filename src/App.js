@@ -6,7 +6,7 @@ import ItemListConteiner from './Componentes/ItemListConteiner/ItemListConteiner
 
 function App(){
   return (
-        <div >
+        <div className='divPadre'>
             <NavBar/> 
             <ItemListConteiner  greeting={"Bienvenidos a mi pagina De React"}/>
         </div>

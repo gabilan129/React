@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -21,7 +22,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(153, 41, 41);
 }
 
 .App-link {
@@ -58,3 +59,11 @@ nav {
 
 }
 
+.divPadre {
+  background-image: url(./assets/paisaje-digital-en-atardecer-5846.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  
+}
