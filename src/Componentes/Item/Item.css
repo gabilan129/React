@@ -1,0 +1,44 @@
+.imgCarts {
+        height: 200px;
+        width: 50%;
+        object-fit: cover;
+        object-fit: contain;
+}
+
+.CartComp {
+    background-color: rgba(56, 4, 53, 0.493);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 50vh;
+    margin: 50px;
+    margin-top: 155px;
+    border: 5px solid rgba(0, 0, 0, 0.014);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+.CartComp  p {
+    font-size: 100%;
+    color: aliceblue;
+    
+}
+
+
+
+.CartComp h1 {
+    color: rgb(243, 243, 243);
+}
+
+
+.CartComp h1:hover {
+    color : rgb(236, 224, 225);
+    text-shadow: 0 0 10px white,
+    0 0 20px rgb(2, 39, 248),
+    0 0 40px rgb(8, 37, 206),
+    0 0 80px rgb(59, 72, 151),
+    0 0 120px rgb(43, 65, 190)
+}

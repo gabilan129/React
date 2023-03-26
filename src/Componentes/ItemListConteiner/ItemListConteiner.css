@@ -1,19 +1,14 @@
 
 button {
     margin: 15px;
-background-color: rgb(231, 27, 27);
+background-color: rgb(211, 205, 205);
 }
 
 .h1Saludo {font-size: 60px;}
 
 
 
-.imgCarts {
-        height: 200px;
-        width: 50%;
-        object-fit: cover;
-        object-fit: contain;
-}
+
 .CartCompDiv{
     display: flex;
     justify-content: center;
@@ -23,24 +18,17 @@ background-color: rgb(231, 27, 27);
     text-align:justify;
 }
 
-.CartComp {
-    background-color: rgba(88, 68, 68, 0.178);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 500px;
-    width: 50vh;
-    margin: 50px;
-    margin-top: 155px;
-    border: 5px solid black;
-}
 
-.CartComp  p {
-    font-size: 100%;
-    color: aliceblue;
-    
-}
 
-.CartComp h1 {
-    color: aliceblue;
+
+.h1Saludo{ color: rgb(234, 241, 247);}
+
+
+.h1Saludo:hover {
+    color : rgb(255, 251, 253);
+    text-shadow: 0 0 10px white,
+    0 0 20px rgb(2, 39, 248),
+    0 0 40px rgb(8, 37, 206),
+    0 0 80px rgb(59, 72, 151),
+    0 0 120px rgb(43, 65, 190)
 }

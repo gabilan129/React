@@ -8,7 +8,7 @@ function App(){
   return (
         <div className='divPadre'>
             <NavBar/> 
-            <ItemListConteiner  greeting={"Bienvenidos a mi pagina De React"}/>
+            <ItemListConteiner  greeting={"Bienvenidos A Mi Pagina De React"}/>
         </div>
   )
 }
