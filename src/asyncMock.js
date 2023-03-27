@@ -2,7 +2,7 @@
 
 const productos = [
     {
-      id: 1,
+      id: "1",
       name: "Samsung Galaxy S23",
       price: 450000,
       category: "celular",
@@ -11,7 +11,7 @@ const productos = [
       stock: 25
     },
     {
-      id: 2,
+      id: "2",
       name: "iPhone 14",
       price: 712000,
       category: "celular",
@@ -20,7 +20,7 @@ const productos = [
       stock: 25
     },
     {
-      id: 3,
+      id: "3",
       name: "Motorola Edge",
       price: 80000,
       category: "celular",
@@ -29,7 +29,7 @@ const productos = [
       stock: 25
     },
     {
-      id: 4,
+      id: "4",
       name: "iPad Air",
       price: 180000,
       category: "tablet",
@@ -38,7 +38,7 @@ const productos = [
       stock: 25
     },
     {
-      id: 5,
+      id: "5",
       name: "MacBook Air",
       price: 280000,
       category: "notebook",
@@ -47,7 +47,7 @@ const productos = [
       stock: 25
     },
     {
-      id: 6,
+      id: "6",
       name: "Samsung Galaxy Tab S7+",
       price: 150000,
       category: "tablet",
@@ -56,7 +56,7 @@ const productos = [
       stock: 25
     },
     {
-      id: 7,
+      id: "7",
       name: "Dell XPS 13",
       price: 320000,
       category: "notebook",
@@ -65,7 +65,7 @@ const productos = [
       stock: 25
     },
     {
-        id: 8,
+        id:"8",
         name: "Lenovo Yoga Tab 13",
         price: 120000,
         category: "tablet",
