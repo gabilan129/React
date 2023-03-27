@@ -1,4 +1,3 @@
-import ItemCount from "../ItemCount/ItemCount";
 import ItemList from "../ItemList/ItemList";
 import "./ItemListConteiner.css";
 import { getProducts } from "../../asyncMock";
@@ -22,7 +21,6 @@ const ItemListConteiner = ({ greeting }) => {
       <div className="CartCompDiv">
         <ItemList productos={productos}/>
         </div>
-      <ItemCount />
     </div>
   );
 };

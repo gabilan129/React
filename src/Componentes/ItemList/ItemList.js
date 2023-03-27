@@ -6,8 +6,7 @@ const ItemList = ({productos}) =>{
 return (
 
     <div className="CartCompDiv">
-{productos.map((productos) => <Item  key={productos.id} {...productos}/>
- )}
+{productos.map(produ => <Item  key={produ.id} {...produ}/>)}
 </div>
 )
 }

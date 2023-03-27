@@ -81,5 +81,22 @@ return new Promise((resolve)=>{
     },)
 })
 }
+
+export const getProductsByCategory = (categoryId) => {
+  return new Promise((resolve) => {
+      setTimeout(() => {
+          resolve(productos.filter(prod => prod.category === categoryId))
+      },1000)
+  })
+}
+
+export const getProductById = (productId) => {
+  debugger
+  return new Promise((resolve) => {
+      setTimeout(() => {
+          resolve(productos.find(prod => prod.id === productId))
+      },)
+  })
+}
   
 

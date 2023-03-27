@@ -22,7 +22,7 @@
 
 
 .CartComp  p {
-    font-size: 100%;
+    font-size: 220%;
     color: aliceblue;
     
 }
@@ -42,3 +42,5 @@
     0 0 80px rgb(59, 72, 151),
     0 0 120px rgb(43, 65, 190)
 }
+
+

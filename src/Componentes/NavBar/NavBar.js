@@ -17,7 +17,7 @@ return (
          
         <Button label="tablet" callback = {()=>console.log("tablet")} />
         <Button label="celulares" callback={()=>console.log("celulares")}/>
-        <Button label="notbooks" callback={()=>console.log("relojes")}/>
+        <Button label="notbooks" callback={()=>console.log("notbooks")}/>
         </div>        
         <CardWidget/>
         
