@@ -1,8 +1,7 @@
 import CardWidget from '../CardWidget/CardWidget'
 import './NavBar.css'
-import Button from '../Button/Button'
 import LogoPowaTienda from './assets/LogoPowaTienda.png'
-
+import { Link } from 'react-router-dom'
 const NavBar = ()=> {
 
 
@@ -15,9 +14,10 @@ return (
 
         <div className='divNavegacion'>
          
-        <Button label="tablet" callback = {()=>console.log("tablet")} />
-        <Button label="celulares" callback={()=>console.log("celulares")}/>
-        <Button label="notbooks" callback={()=>console.log("notbooks")}/>
+        <Link className='Link' to="/categoria/celular" >Celulares</Link>
+        <Link className='Link' to="/categoria/tablet" >Tablet</Link>
+        <Link className='Link' to="/categoria/notebook" >notebook</Link>
+
         </div>        
         <CardWidget/>
         
@@ -28,4 +28,5 @@ return (
 }
 
 export default NavBar
+
 
