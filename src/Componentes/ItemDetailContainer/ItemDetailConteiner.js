@@ -1,18 +1,18 @@
-
-import { useEffect ,useState } from "react"
-import { getProductById } from "../../asyncMock"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
+import { useEffect ,useState } from "react"
+import { getProductById } from "../../asyncMock.js"
+import "./ItemDetailConteiner.css"
 const ItemDetailConteiner = () =>{
 
     const [productos,setProductos] =useState()
 
     useEffect(()=>{
         
-        getProductById("2").then((resolve) => {
-            setProductos(resolve)
+        getProductById(8).then((productos) => {
+            setProductos(productos)
             
-        }).catch((error) => {
+        }).catch(error => {
 console.log("error")            
         })
     },[])
@@ -21,7 +21,7 @@ console.log("error")
 
 return (
 
-<div>
+<div className="ItemDetailContainer">
     <ItemDetail {...productos}/>
 </div>
 

@@ -10,7 +10,7 @@ const NavBar = ()=> {
 return (
 <header>
     
-    <nav class=" d-flex justify-content-between colorNav"> 
+    <nav className=" d-flex justify-content-between colorNav"> 
         <img src={LogoPowaTienda} alt="logo tienda"/>
 
         <div className='divNavegacion'>

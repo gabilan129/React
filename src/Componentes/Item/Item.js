@@ -1,5 +1,5 @@
-import Button from "../Button/Button";
 import "./Item.css"
+import { Link } from "react-router-dom";
 const Item = ({name,image,price}) =>{
 
 return (
@@ -8,7 +8,7 @@ return (
     <h1>{name}</h1>
     <img className="imgCarts" src={image} alt={name} />
     <p className="priceCart">$ {price}</p>
-    <Button label="Agregar" />
+    <Link to="/item" className="buttonNav">ver detalle</Link>
   </div>
 )
 

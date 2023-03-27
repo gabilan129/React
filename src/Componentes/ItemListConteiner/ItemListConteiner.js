@@ -1,7 +1,7 @@
 import ItemList from "../ItemList/ItemList";
-import "./ItemListConteiner.css";
 import { getProducts } from "../../asyncMock";
 import { useEffect, useState } from "react";
+import "./ItemListConteiner.css"
 
 const ItemListConteiner = ({ greeting }) => {
   const [productos, setProductos] = useState([]);

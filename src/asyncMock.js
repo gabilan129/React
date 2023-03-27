@@ -91,7 +91,7 @@ export const getProductsByCategory = (categoryId) => {
 }
 
 export const getProductById = (productId) => {
-  debugger
+  
   return new Promise((resolve) => {
       setTimeout(() => {
           resolve(productos.find(prod => prod.id === productId))
