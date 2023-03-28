@@ -1,5 +1,7 @@
 import ItemCount from "../ItemCount/ItemCount"
-const ItemDetail = ({id,name,price,stock,image})=>{
+import "./ItemDetail.css"
+
+const ItemDetail = ({id,name,price,stock,image,description})=>{
 
 
 
@@ -19,6 +21,7 @@ const ItemDetail = ({id,name,price,stock,image})=>{
             <h1>{name}</h1>
             <img className="imgCarts" src={image} alt={name} />
             <p className="priceCart">$ {price}</p>
+            <p className="descriptionDetail">{description}</p>
             <ItemCount onAdd={handleOnAdd} stock={stock}/>
           </div>
         

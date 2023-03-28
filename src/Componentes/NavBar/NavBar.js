@@ -9,12 +9,12 @@ const NavBar = ()=> {
 return (
 <header>
     
-    <nav className=" d-flex justify-content-between colorNav"> 
-        <img src={LogoPowaTienda} alt="logo tienda"/>
+    <nav className=" d-flex justify-content-between colorNav aling-content-center"> 
+         <Link to="/"><img className='logo' src={LogoPowaTienda} alt="logo tienda"/></Link>
 
         <div className='divNavegacion'>
          
-        <Link className='Link' to="/categoria/celular" >Celulares</Link>
+        <Link className='Link' to="/categoria/celular">Celulares</Link>
         <Link className='Link' to="/categoria/tablet" >Tablet</Link>
         <Link className='Link' to="/categoria/notebook" >notebook</Link>
 

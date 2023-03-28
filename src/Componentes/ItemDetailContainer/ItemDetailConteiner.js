@@ -1,5 +1,4 @@
 import ItemDetail from "../ItemDetail/ItemDetail"
-
 import { useEffect ,useState } from "react"
 import { getProductById } from "../../asyncMock.js"
 import "./ItemDetailConteiner.css"

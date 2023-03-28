@@ -1,34 +1,11 @@
-.divCount {
-    display: flex;
-    justify-content: center;
+.descriptionDetail {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
 
 }
 
-h1 {
-    text-align: center;
-    color: aliceblue;
-}
 
-.h1Count {
-    font-size: 50px;
-    color: aliceblue;
-}
-
-.BotonesSumarYrestar {
-    display: flex;
-    justify-content: center;
-}
-
-.contador {
-    color:rgb(234, 0, 255);
-    font-size: 50px;
-    padding: 20px;
-    margin: 0;
-    order: 1;
-    
-}
-
-.Button {
+.ButtonDetail {
     text-decoration: none;
     border-radius: 25;
     margin: 0 30px;
@@ -49,10 +26,4 @@ h1 {
     cursor: pointer;
     outline: inherit;
     font-size: larger;
-}
-
-.Controles{
-    display: flex;
-    font-size: 50px;
-    
 }
