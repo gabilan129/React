@@ -5,12 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import ItemListConteiner from './Componentes/ItemListConteiner/ItemListConteiner';
 import ItemDetailConteiner from './Componentes/ItemDetailContainer/ItemDetailConteiner';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import Animaciones from './Componentes/Animaciones';
 
 function App(){
   return (
         <div className='divPadre'>
-          <BrowserRouter>
+           <BrowserRouter>
             <NavBar/> 
             <Routes>
               <Route path='/' element={<ItemListConteiner  greeting={"Bienvenidos A Mi Pagina De React"}/>}/>
@@ -18,6 +18,7 @@ function App(){
               <Route path='/item/:itemId' element={<ItemDetailConteiner/>}/>
             </Routes>
           </BrowserRouter>
+          <Animaciones/>
         </div>
   )
 }
