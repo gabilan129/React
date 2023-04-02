@@ -17,12 +17,12 @@ const ItemDetail = ({id,name,price,stock,image,description})=>{
 
 
     return (
-            <div  className="CartComp">
+            <div  className="CartCompDetail">
             <h1>{name}</h1>
             <img className="imgCarts" src={image} alt={name} />
             <p className="priceCart">$ {price}</p>
             <p className="descriptionDetail">{description}</p>
-            <ItemCount onAdd={handleOnAdd} stock={stock}/>
+            <ItemCount  onAdd={handleOnAdd} stock={stock}/>
           </div>
         
         

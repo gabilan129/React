@@ -7,14 +7,24 @@
     background-color: rgba(128, 128, 128, 0.253);
 }
 
-.Link{background-color: rgb(158, 53, 199);
+.Link{
+    background-color: rgb(158, 53, 199);
     border-radius: 15px ;
     font-size: 20px;
     padding: 5px;
-    
+
 
 }
 
 .logo{
     height: 100%;
+}
+
+.divNavegacion{
+display: flex;
+justify-content: center;
+justify-content: space-evenly;
+padding: 10px;
+width: 100%;
+height: 100%;
 }

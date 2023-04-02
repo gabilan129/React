@@ -239,3 +239,6 @@ routs envuelve a todos los componentes que son dinamicos que van cambiando
 el navbar deberia estar fuera de routes . el nav tiene que ser hijo del estado view que sincroniza la url
 
 route envuelve a cada uno de los componentes lo que hace es que se le pasa por propos la url de cada uno 
+
+
+<!-- todo Clase 9 eventos -->

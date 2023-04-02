@@ -9,6 +9,7 @@ return (
     <img className="imgCarts" src={image} alt={name} />
     <p className="priceCart  CartCompP">$ {price}</p>
     <Link to={`/item/${id}`} className="buttonNav">ver detalle</Link>
+    
   </div>
 )
 

@@ -1,9 +1,11 @@
 .imgCarts {
-        height: 200px;
-        width: 50%;
-        object-fit: cover;
-        object-fit: contain;
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+    object-fit: contain;
 }
+
+
 
 .CartComp {
     background-color: rgba(56, 4, 53, 0.493);
@@ -17,7 +19,14 @@
     border: 5px solid rgba(0, 0, 0, 0.014);
     border-radius: 10px;
     padding: 10px;
+  
 }
+
+.CartComp:hover,.imgCarts:hover{
+    
+        filter: drop-shadow( 0 0 15px rgba(182, 3, 167, 0.466));
+    }
+
 
 
 
