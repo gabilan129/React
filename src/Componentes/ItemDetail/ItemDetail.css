@@ -50,9 +50,17 @@
   animation-iteration-count: infinite;
 }
 
+
+
 @keyframes animacion2 {
 0%{background-color: #ff35d32c;}
 50%{
     background-color: rgba(255, 0, 0, 0.212) ;}
 
+}
+
+button{
+padding: 5px;
+background-color: #8C30F5; 
+border: #8C30F5;
 }

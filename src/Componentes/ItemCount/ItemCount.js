@@ -16,8 +16,6 @@ const ItemCount = ({stock = 0,inicio=1, onAdd}) => {
   };
 
 
-  console.log(cantidad);
-
   return (
     <div className="divCount">
       <div className="BotonesSumarYrestar">

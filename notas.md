@@ -242,3 +242,22 @@ route envuelve a cada uno de los componentes lo que hace es que se le pasa por p
 
 
 <!-- todo Clase 9 eventos -->
+
+
+
+
+
+
+
+
+<!-- todo Clase 10 context -->
+
+
+context crea una burbuja que contiene un value = [valor] y este valor va poder ser accedido por cualquiera de los componentes que tenga el context
+esto ahorra pasarme los datos por prox
+context comparte un unico valor
+
+          <Context.Provider>
+ es el componente que envuelve los componentes
+ para consumir el context se usa import { useContext } from "react";
+ en el componente

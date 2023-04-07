@@ -1,8 +1,13 @@
 import ItemCount from "../ItemCount/ItemCount"
+import {useContext} from "react"
 import "./ItemDetail.css"
-
+import { Context } from "../../App"
 const ItemDetail = ({id,name,price,stock,image,description})=>{
 
+
+    
+
+    const {addItem} = useContext(Context)
 
 
 
@@ -10,9 +15,11 @@ const ItemDetail = ({id,name,price,stock,image,description})=>{
             const productToAdd = {
                 id, name, price, cantidad
             }
-            console.log(productToAdd)
+
+            addItem(productToAdd)
         }
     
+
 
 
 
@@ -22,7 +29,10 @@ const ItemDetail = ({id,name,price,stock,image,description})=>{
             <img className="imgCarts" src={image} alt={name} />
             <p className="priceCart">$ {price}</p>
             <p className="descriptionDetail">{description}</p>
-            <ItemCount  onAdd={handleOnAdd} stock={stock}/>
+            <footer>
+                   <ItemCount  onAdd={handleOnAdd} stock={stock}/>
+                
+            </footer>
           </div>
         
         

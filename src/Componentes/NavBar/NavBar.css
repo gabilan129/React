@@ -4,7 +4,7 @@
 }
 
 .colorNav{
-    background-color: rgba(128, 128, 128, 0.253);
+    background-color: rgba(153, 38, 163, 0.014);
 }
 
 .Link{
@@ -12,7 +12,8 @@
     border-radius: 15px ;
     font-size: 20px;
     padding: 5px;
-
+   text-decoration: none ;
+   color: aliceblue;
 
 }
 
