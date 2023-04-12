@@ -2,8 +2,7 @@ import ItemCount from "../ItemCount/ItemCount"
 import "./ItemDetail.css"
 import { useCart } from "../../context/CartContext"
 import { Link } from "react-router-dom"
-import { useContext } from "react"
-import { NotificacionContext } from "../../App"
+import { useNotificacion } from "../../Notificaciones/Notificaciones"
 
 const ItemDetail = ({id,name,price,stock,image,description})=>{
 
@@ -11,7 +10,7 @@ const ItemDetail = ({id,name,price,stock,image,description})=>{
     
 
     const {addItem , isInCart} = useCart()
-    const {setNotificacion} = useContext(NotificacionContext)
+    const {setNotificacion} = useNotificacion()
 
 
         const handleOnAdd = (cantidad) => {
