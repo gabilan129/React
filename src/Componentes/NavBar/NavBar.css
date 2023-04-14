@@ -8,12 +8,12 @@
 }
 
 .Link{
-    background-color: rgb(158, 53, 199);
-    border-radius: 15px ;
-    font-size: 20px;
+    background-color: rgba(158, 53, 199, 0);
+    border-radius: 1px ;
+    font-size: 30px;
     padding: 5px;
-   text-decoration: none ;
-   color: aliceblue;
+    text-decoration: none ;
+    color: aliceblue;
 
 }
 

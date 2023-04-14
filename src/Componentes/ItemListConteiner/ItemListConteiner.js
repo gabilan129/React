@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { getDocs , collection ,query ,where} from "firebase/firestore";
 import { db } from "../../Servicio/firebase/fireBaseConfig";
 
+
 const ItemListConteiner = ({ greeting }) => {
   const [productos, setProductos] = useState([]);
 
@@ -51,9 +52,14 @@ const [loading,setLoading] = useState(true)
 
   
 if(loading){
-  return( <h1>
+
+  return( 
+  <div className="divLoadingPague">
+    <h1>
     CARGANDO....
-    </h1>)
+    </h1>
+  </div>
+  )
 }
 
   return (

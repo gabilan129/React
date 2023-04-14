@@ -17,6 +17,7 @@ h1 {
 .BotonesSumarYrestar {
     display: flex;
     justify-content: center;
+    
 }
 
 .contador {
@@ -53,6 +54,6 @@ h1 {
 
 .Controles{
     display: flex;
-    font-size: 50px;
+    font-size: 100%;
     
 }

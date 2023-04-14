@@ -35,7 +35,7 @@ const ItemDetail = ({id,name,price,stock,image,description})=>{
             <footer>
 
                 {isInCart(id) ? (
-                    <Link to="/cart">Terminar Compra</Link>
+                    <Link className="btn" to="/cart">Terminar Compra</Link>
                 ): (
 
                    <ItemCount  onAdd={handleOnAdd} stock={stock}/>

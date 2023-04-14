@@ -44,7 +44,7 @@ getDoc(productoRef)
 
 if(loading) {
     return (
-        <div>
+        <div className="divLoadingPague">
             <h1>Cargando...</h1>
         </div>
     )
