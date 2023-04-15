@@ -6,6 +6,8 @@ import ItemDetailConteiner from "./Componentes/ItemDetailContainer/ItemDetailCon
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import { NotificacionProvider } from "./Notificaciones/Notificaciones";
+import CartView from "./Componentes/CartView/CartView";
+import Checkout from "./Componentes/CheckOut/CheackOut";
 
 function App() {
   return (
@@ -28,8 +30,8 @@ function App() {
                 element={<ItemListConteiner greeting={"productos filtrados"} />}
               />
               <Route path="/item/:itemId" element={<ItemDetailConteiner />} />
-              <Route path="/cart" element={<h1>Cart</h1>} />
-              <Route path="/checkout" element={<h1>checkout</h1>} />
+              <Route path="/cart" element={<CartView/>} />
+              <Route path="/checkout" element={<Checkout/>} />
             </Routes>
           </CartProvider>
         </NotificacionProvider>

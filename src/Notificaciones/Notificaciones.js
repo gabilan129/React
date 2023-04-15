@@ -38,11 +38,11 @@ export const NotificacionProvider = ({children}) => {
       
 
 
-    const setNotificacion = (type,text)=>{
-        setNotificacionData({type,text})
+    const setNotificacion = (type,text,time)=>{
+        setNotificacionData({type,text,time})
         setTimeout(() => {
           setNotificacion({type,text:``})
-        }, 1500);
+        }, time? time * 1000 : 2000);
       }
       
 

@@ -37,9 +37,24 @@ return totalQuantity
 
 const totalQuantity = getTotalQueantity()
 
+const getTotalCompra = ()=>{
+    let totalCompra = 0
+     cart.forEach(prod=> {
+         totalCompra += prod.cantidad * prod.price
+     })
+ return totalCompra
+ }
+ 
+ const totalCompra = getTotalCompra()
+ const LimpiarCarrito = ()=>{
+    setCart([])
+ }
+
+
+
     return (
 
-        <CartContext.Provider value={{ cart, addItem , totalQuantity,removerItem,isInCart}}>
+        <CartContext.Provider value={{ cart, addItem , totalQuantity,removerItem,isInCart,totalCompra,LimpiarCarrito}}>
 
             {children}
 
