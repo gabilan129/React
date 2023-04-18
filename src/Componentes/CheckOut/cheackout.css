@@ -1,0 +1,28 @@
+
+
+
+.divCheack{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+height: 100vh;
+color: aliceblue;
+
+}
+.buttonPago{
+  padding: 5px;
+  background-color: #8C30F5; 
+  border: #8C30F5;
+  width: 10vw;
+  }
+  
+
+ 
+.divCheackFin{
+    height: 100vh;
+    font-size: 50px;
+}
+
+

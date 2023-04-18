@@ -1,10 +1,10 @@
+import "./cheackout.css"
 import { addDoc, collection, documentId, getDocs, query, where, writeBatch } from "firebase/firestore";
 import { useCart } from "../../context/CartContext";
 import { db } from "../../Servicio/firebase/fireBaseConfig";
 import { useState } from "react";
 import { useNotificacion } from "../../Notificaciones/Notificaciones";
 import { useNavigate } from "react-router-dom";
-
 const Checkout = () => {
 
     const [ordenId,setOrdenID] = useState("")
@@ -84,7 +84,7 @@ setNotificacion(`error` , `hubo un error generando la orden`,5)
 
   if(loading){
       return (
-          <div>
+          <div className="divLoadingPague">
               <h1>Se esta generando su orden...</h1>
           </div>
       )
@@ -92,7 +92,7 @@ setNotificacion(`error` , `hubo un error generando la orden`,5)
 
 if(ordenId){
     return (
-        <div>
+        <div className="divCheackFin">
         <h1>el id de su compra es : {ordenId}</h1>
         </div>
     )
@@ -100,11 +100,16 @@ if(ordenId){
 
 
   return (
-    <div>
+    <div className="divCheackContenedor" >
       <h1>checkout</h1>
+    <div className="divCheack">
+    <div >
       <h2>Ingrese sus datos</h2>
+      <textarea/>
       {/* <Form onConfirm={createOrder}/> */}
-      <button onClick={createOrder}>createOrder</button>
+    </div>
+      <button className="buttonPago" onClick={createOrder}>createOrder</button>
+    </div>
     </div>
   );
 };

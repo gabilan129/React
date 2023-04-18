@@ -17,7 +17,7 @@ return (
         <Link className='Link' to="/categoria/celular">Celulares</Link>
         <Link className='Link' to="/categoria/tablet" >Tablet</Link>
         <Link className='Link' to="/categoria/notebook" >notebook</Link>
-
+        
         </div>        
         <CardWidget/>
         

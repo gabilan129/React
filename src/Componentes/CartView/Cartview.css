@@ -1,0 +1,50 @@
+.divCartviewContenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(4, 2, 29, 0.192);
+}
+
+
+
+.divProductosCarrito>div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 2050px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    width: 100vh;
+    color: aliceblue;
+    justify-content: space-between;   
+}
+
+.divEncabezadoCarrito {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+  }
+  
+  .divEncabezadoCarrito h3 {
+    flex-basis: calc(33.33% - 20px);
+  }
+
+
+  .LinkPagar{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgba(38, 0, 255, 0.397);
+    border-radius: 5px;
+    width: 10%;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .LinkPagar:hover{
+    background-color: rgba(0, 255, 255, 0.479);
+    color: aliceblue
+  }
