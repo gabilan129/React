@@ -31,18 +31,14 @@ return (
 <header>
     
     <nav className=" d-flex justify-content-between colorNav aling-content-center"> 
-         <Link to="/"><img className='logo' src={LogoPowaTienda} alt="logo tienda"/></Link>
+        <Link to="/"><img className='logo' src={LogoPowaTienda} alt="logo tienda"/></Link>
 
         <div className='divNavegacion'>
-         {
+        {
             categorias.map(cate => {
                 return   <Link key={cate.id} className='Link' to={`/categoria/${cate.slug}`}>{cate.label}</Link>
             })
-         }
-        {/* <Link className='Link' to="/categoria/celular">Celulares</Link>
-        <Link className='Link' to="/categoria/tablet" >Tablet</Link>
-        <Link className='Link' to="/categoria/notebook" >notebook</Link>
-         */}
+        }
         </div>        
         <CardWidget/>
         

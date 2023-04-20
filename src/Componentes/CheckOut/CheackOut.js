@@ -5,6 +5,7 @@ import { db } from "../../Servicio/firebase/fireBaseConfig";
 import { useState } from "react";
 import { useNotificacion } from "../../Notificaciones/Notificaciones";
 import { useNavigate } from "react-router-dom";
+import Contacto from "../Contactos/Contacto";
 const Checkout = () => {
 
     const [ordenId,setOrdenID] = useState("")
@@ -20,14 +21,9 @@ const navigate = useNavigate()
   setLoading(true)
 
     const objOrder = {
-      // comprador : userData
-      comprador: {
-        nombre: "gabriel",
-        telefono: "12121212",
-        mail: "ewerwer@sdsd",
-      },
-      items: cart,
-      total: totalCompra,
+      comprador:userData,
+      items:cart,
+      total:totalCompra,
     };
   
   const ids = cart.map(prod =>prod.id)
@@ -105,10 +101,10 @@ if(ordenId){
     <div className="divCheack">
     <div >
       <h2>Ingrese sus datos</h2>
-      <textarea/>
-      {/* <Form onConfirm={createOrder}/> */}
+      <Contacto onConfirm={createOrder}/>
+      
     </div>
-      <button className="buttonPago" onClick={createOrder}>createOrder</button>
+      {/* <button className="buttonPago" onClick={createOrder}>createOrder</button> */}
     </div>
     </div>
   );
