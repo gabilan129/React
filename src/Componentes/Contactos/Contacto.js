@@ -14,18 +14,14 @@ const Contacto = ({ onConfirm }) => {
     onConfirm(userData);
   };
 
+
   return (
     <form onSubmit={handleSubmit} className="formContacto">
-      <input value={nombre} onChange={(e) => setNombre(e.target.value)} id="nombreLabel" />{" "}
-      <label for="nombreLabel">Ingrese su nombre</label>
+      <input  value={nombre} onChange={(e) => setNombre(e.target.value)} id="nombreLabel" placeholder="Ingrese Su Nombre" />{" "}
       <hr />
-      <input value={mail} onChange={(e) => setMail(e.target.value)}id="mailLabel" />
-      <label for="mailLabel">Ingrese su mail</label>
-
+      <input type="email" value={mail} onChange={(e) => setMail(e.target.value)}id="mailLabel" placeholder="Ingrese Su Mail" />
       <hr />
-      <input value={telefono} onChange={(e) => setTelefono(e.target.value)} id="talefonoLabel" />
-      <label for="telefonoLabel">Ingrese su telefono</label>
-
+      <input type="number" value={telefono} onChange={(e) => setTelefono(e.target.value)} id="talefonoLabel" placeholder="Ingrese Su Telefono" />
       <hr/>
       <button>Generar Orden</button>
     </form>

@@ -100,11 +100,10 @@ if(ordenId){
       <h1>checkout</h1>
     <div className="divCheack">
     <div >
-      <h2>Ingrese sus datos</h2>
+      <h1>Ingrese sus datos</h1>
       <Contacto onConfirm={createOrder}/>
       
     </div>
-      {/* <button className="buttonPago" onClick={createOrder}>createOrder</button> */}
     </div>
     </div>
   );

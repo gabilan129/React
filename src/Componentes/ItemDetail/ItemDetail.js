@@ -9,13 +9,14 @@ const ItemDetail = ({id,name,price,stock,image,description})=>{
 
     
 
-    const {addItem , isInCart} = useCart()
+    const {addItem , isInCart ,getProductsCantidad} = useCart()
     const {setNotificacion} = useNotificacion()
 
+    const productCantidad = getProductsCantidad(id)  
 
         const handleOnAdd = (cantidad) => {
             const productToAdd = {
-                id, name, price,cantidad
+                id, name, price,cantidad,stock
             }
 
             addItem(productToAdd)
@@ -34,15 +35,15 @@ const ItemDetail = ({id,name,price,stock,image,description})=>{
             <p className="descriptionDetail">{description}</p>
             <footer>
 
-                {isInCart(id) ? (
+                {/* {isInCart(id) ? (
                     <Link className="btn" to="/cart">Terminar Compra</Link>
-                ): (
+                ): ( */}
 
-                   <ItemCount  onAdd={handleOnAdd} stock={stock}/>
-                )}
+                <ItemCount  onAdd={handleOnAdd} stock={stock} inicio={productCantidad  || 1}/>
+                {/* )} */}
                     
             </footer>
-          </div>
+            </div>
         
         
 

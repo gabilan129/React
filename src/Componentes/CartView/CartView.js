@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import "./Cartview.css"
 const CartView = ()=>{
 
-const {cart ,totalCompra} = useCart()
+const {cart ,totalCompra,decremetarCantidad,incrementarCantidad,LimpiarCarrito} = useCart()
 
 
 
@@ -12,6 +12,7 @@ const {cart ,totalCompra} = useCart()
 <div className="divCartviewContenedor">
     
         <h1>Productos en Carrito</h1>
+        <button onClick={()=>{LimpiarCarrito()}}>LimpiarCarrito</button>
 <div className="divProductosCarrito">
         <div>
     <h3>Productos</h3>
@@ -27,9 +28,11 @@ const {cart ,totalCompra} = useCart()
 <div key={prod.id}>
    
     <h2>{prod.name}</h2>
-    <h2>{prod.cantidad}</h2>
     <h2>${prod.price}</h2>
     <h2>${prod.price * prod.cantidad }</h2>
+    <button onClick={()=>incrementarCantidad(prod.id,prod.stock)}>sumar</button>
+    <h2>{prod.cantidad}</h2>
+    <button onClick={()=>decremetarCantidad(prod.id)}>restar</button>
 </div>                
             )
         })
