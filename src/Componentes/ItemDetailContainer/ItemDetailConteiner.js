@@ -5,7 +5,7 @@ import "./ItemDetailConteiner.css"
 import { useParams } from "react-router-dom"
 import { doc, getDoc } from "firebase/firestore"
 import { db } from "../../Servicio/firebase/fireBaseConfig"
-
+import { crearProductoAdaptadoDeFirestore } from "../../adaptadores/crearProductoAdaptadoFirestore"
 const ItemDetailConteiner = () =>{
 
     const [productos,setProductos] =useState()
@@ -23,8 +23,7 @@ const {itemId} =useParams()
 getDoc(productoRef)
 .then(snapshot=>{
     console.log(snapshot)
-    const data = snapshot.data()
-    const productoAdaptado = {id:snapshot.id , ...data}
+    const productoAdaptado = crearProductoAdaptadoDeFirestore(snapshot)
     setProductos(productoAdaptado)
 }).catch(error =>{
     console.log(error)

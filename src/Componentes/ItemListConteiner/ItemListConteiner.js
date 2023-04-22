@@ -3,9 +3,9 @@ import ItemList from "../ItemList/ItemList";
 import { useEffect, useState } from "react";
 import "./ItemListConteiner.css"
 import { useParams } from "react-router-dom";
-import { getDocs , collection ,query ,where} from "firebase/firestore";
-import { db } from "../../Servicio/firebase/fireBaseConfig";
-
+// import { getDocs , collection ,query ,where} from "firebase/firestore";
+// import { db } from "../../Servicio/firebase/fireBaseConfig";
+import { getProducts } from "../../Servicio/firebase/firestore/productos";
 
 const ItemListConteiner = ({ greeting }) => {
   const [productos, setProductos] = useState([]);
@@ -18,35 +18,16 @@ const [loading,setLoading] = useState(true)
 
   useEffect(() => {
     setLoading(true)
-
-    const productosRef = categoriaId 
-    ? query(collection(db,"productos"), where("category","==",categoriaId))
-    : collection(db,"productos")
-    
-    
-    
-    getDocs(productosRef)
-.then(snapshot => {
-  console.log(snapshot);
-  const productosAdaptados = snapshot.docs.map(doc =>{
-    const data = doc.data()
-    return { id: doc.id,...data}
-  })
-  setProductos(productosAdaptados)
-}).catch(error =>{console.log("error")
-}).finally(()=>{
+getProducts(categoriaId).then(productos => {
+  setProductos(productos)
+})
+.catch(error => {
+  console.log(error)
+})
+.finally(()=>{
   setLoading(false)
 })
-
-// const asyncFunction = categoriaId ? getProductsByCategory : getProducts
-
-//     asyncFunction(categoriaId) // utilizo el use efect para que se ejecute una sola ves
-//       .then((productos) => {
-//         setProductos(productos);
-//       }).finally(()=>{
-//         setLoading(false)
-//       });
-  }, [categoriaId]);
+}, [categoriaId]);
 
 
 
